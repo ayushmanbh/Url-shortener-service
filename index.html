@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+      crossorigin="anonymous"
+    />
+    <title>Best URL Shortener</title>
+  </head>
+  <body>
+    <div
+      class="container-fluid d-flex min-vh-100 flex-column justify-content-between align-items-center"
+    >
+      <div class="text-center">
+        <h1 class="display-4">Best URL Shortener Ever!</h1>
+      </div>
+      <form id="form">
+        <div class="input-group input-group-lg">
+          <div class="input-group-prepend">
+            <span class="input-group-text">https://</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            id="pasted_link"
+            placeholder="Paste your loooong URL"
+            required
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">Shorten</button>
+          </div>
+        </div>
+        <div>
+          <p class="lead" id="dynamic_text">
+            Your short link will appear here.
+          </p>
+        </div>
+      </form>
+      <div>
+        <p class="lead">
+          Made with <span class="text-danger text-center">&hearts;</span> by
+          Ayushman
+        </p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
